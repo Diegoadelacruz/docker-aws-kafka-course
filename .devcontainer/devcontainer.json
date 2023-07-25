@@ -1,0 +1,50 @@
+{
+    "name": "curso-aws-kafka",
+    "dockerComposeFile": ["docker-compose.yaml"],
+    "service": "tools",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.aws,target=/root/.aws,type=bind",
+        "source=${env:HOME}${env:USERPROFILE}/.m2,target=/root/.m2,type=bind",
+        //"source=${env:HOME}${env:USERPROFILE}/.kube,target=/root/.kube,type=bind",
+        "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,readonly",
+        // "source=${env:HOME}${env:USERPROFILE}/Projects/Mitocode/2-curso-docker-aws-kafka,target=/workspace,type=bind",
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    // Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on
+			// container create.
+			"settings": { 
+				"java.compile.nullAnalysis.mode": "automatic",
+                "java.configuration.updateBuildConfiguration": "automatic"
+			},
+			
+			// Add the IDs of extensions you want installed when the container
+			// is created.
+			"extensions": [
+                "vmware.vscode-manifest-yaml",
+                "fabiospampinato.vscode-diff",
+                "hashicorp.terraform",
+                "redhat.vscode-xml",
+                "christian-kohler.npm-intellisense",
+                "jeppeandersen.vscode-kafka",
+                "ms-azuretools.vscode-docker",
+                "formulahendry.vscode-mysql",
+                "vmware.vscode-boot-dev-pack",
+                "vscjava.vscode-lombok",
+                "redhat.java",
+                "vscjava.vscode-java-dependency",
+                "visualstudioexptteam.vscodeintellicode",
+                "postman.postman-for-vscode",
+                "hediet.vscode-drawio",
+				"angular.ng-template",
+                "vscjava.vscode-spring-boot-dashboard"
+                // "amazonwebservices.aws-toolkit-vscode",
+			]
+		}
+	},
+    "features": {}
+}

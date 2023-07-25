@@ -1,0 +1,38 @@
+version: "2"
+services:
+
+  tools:
+    # build:
+    #   context: ./
+    #   dockerfile: Dockerfile
+    image: wjma90/curso-aws-kafka
+    user: root
+    init: true 
+    privileged: true
+    # env_file: 
+    #   - custom.env
+    environment:
+      DOCKER_BUILDKIT: 1
+      COMPOSE_DOCKER_CLI_BUILD: 1
+    volumes:
+      - ..:/workspace:cached
+      - bashhistory:/commandhistory
+    command: sleep infinity
+    # networks:
+    #   - devcontainer-example
+    network_mode: host
+    extra_hosts:
+      - "moby:127.0.0.1"
+    # ports:
+    #   - 8080
+
+volumes:
+  bashhistory:
+
+# networks:
+#   # If we're using many containers we likely want them to be on the same
+#   # network. I recommend that you change the network name to match the name of
+#   # the project, since if you're running many devcontainer environments at once
+#   # with the same network name, they will share the same network and could cause
+#   # issues
+#   devcontainer-example:
