@@ -2,7 +2,7 @@ version: "2"
 services:
 
   tools:
-    # build:
+    # build:          //This 3 lines were commented cause avoid "build" entire container after first time
     #   context: ./
     #   dockerfile: Dockerfile
     image: wjma90/curso-aws-kafka
