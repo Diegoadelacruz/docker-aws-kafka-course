@@ -1,0 +1,8 @@
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/dao/PersonaDAO.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/controller/api/ApiPersonaController.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/service/impl/PersonaServiceImpl.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/dto/RespuestaApi.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/service/PersonaService.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/App.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/controller/StatusController.java
+/workspace/1-docker-for-developers/java/api-persona/src/main/java/taller/ninja/demodocker/model/Persona.java

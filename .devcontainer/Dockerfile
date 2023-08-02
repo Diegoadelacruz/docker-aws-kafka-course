@@ -84,6 +84,7 @@ RUN echo 'export AWS_VAULT_FILE_PASSPHRASE="$(cat ~/.aws/password-aws-vault)"' >
 #    aws-vault --version
 
 RUN aws --version && \
+   kubectl version --client && \
    python --version && \
    aws-vault --version
 
